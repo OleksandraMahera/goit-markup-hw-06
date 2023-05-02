@@ -460,13 +460,17 @@ button {
 }
 
 .footer-text {
-    margin-right: 120px;
-    width: 264px;
+
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 
     color: #E7E9FC;
+}
+
+.footer-one {
+    margin-right: 120px;
+    width: 264px;
 }
 
 .footer-container {
@@ -517,8 +521,7 @@ button {
 
 /* Footer Subscribe */
 .subscribe-container {
-    align-items: center;
-    margin-left: 80px;
+    margin-left: auto;
 }
 
 .sub-title {
@@ -569,16 +572,22 @@ button {
     background-color: var(--acent-color);
     color: var(--contrast-color-of-text);
     display: flex;
-    justify-content: center;
     align-items: center;
+    padding: 8px 24px;
     gap: 16px;
+
+    border: none;
+    border-radius: 4px;
+
+    font-weight: 500;
+    font-family: inherit;
+
+
 }
 
 .subscribe-icon {
     fill: var(--contrast-color-of-text);
     flex-wrap: wrap;
-    margin-left: 16px;
-    margin-right: 10px;
 }
 
 
@@ -805,8 +814,7 @@ button {
     transform: translate(-50%, -50%) scale(1);
 
     width: 408px;
-    min-height: 576px;
-    padding: 24px;
+    padding: 72px 24px 24px;
 
     background-color: #fcfcfc;
     border-radius: 4px;
@@ -853,7 +861,6 @@ button {
 
 .modal-title {
     display: block;
-    margin-top: 24px;
     margin-bottom: 16px;
 
     font-size: 16px;
@@ -865,10 +872,8 @@ button {
     margin-bottom: 4px;
     font-size: 12px;
 
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
-    line-height: 14px;
+    line-height: 2;
     letter-spacing: 0.04em;
 
 }
@@ -886,14 +891,14 @@ button {
     border: 1px solid var(--header-text);
     border-radius: 4px;
 
-    outline: 2px solid transparent;
-    outline-offset: -2px;
+    outline: none;
+   
 
-    transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input:focus {
-    outline-color: var(--acent-color);
+    border-color: var(--acent-color);
 }
 
 .modal-form-icon {
@@ -940,7 +945,6 @@ button {
     display: block;
     margin: 0 auto;
     border: 0;
-    padding: 0;
     padding: 16px 32px;
     min-width: 169px;
     
@@ -948,7 +952,6 @@ button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    align-items: center;
     letter-spacing: 0.04em;
     
     background-color: var(--acent-color);
@@ -1009,7 +1012,7 @@ input[type='checkbox']:checked+.modal-form-agreement-icon>.modal-form-agreement-
 }
 
 input[type='checkbox']:checked+.modal-form-agreement-icon>.modal-form-agreement-unchecked {
-    opacity: 0;
+    opacity: 1;
 }
 
 
@@ -1020,4 +1023,17 @@ input[type='checkbox']:checked+.modal-form-agreement-icon>.modal-form-agreement-
 
 .modal-form-agreement-link {
     color: var(--acent-color);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
