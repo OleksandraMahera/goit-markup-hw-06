@@ -581,8 +581,7 @@ button {
 
     font-weight: 500;
     font-family: inherit;
-
-
+    line-height: 1.5;
 }
 
 .subscribe-icon {
@@ -873,9 +872,10 @@ button {
     font-size: 12px;
 
     font-weight: 400;
-    line-height: 2;
+    line-height: 1.17;
     letter-spacing: 0.04em;
 
+    color: #8E8F99;;
 }
 
 .modal-form-field {
@@ -888,7 +888,7 @@ button {
     height: 40px;
     padding: 0 38px;
 
-    border: 1px solid var(--header-text);
+    border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
 
     outline: none;
@@ -927,7 +927,7 @@ button {
 
     font-size: 12px;
 
-    border: 1px solid var(--header-text);
+    border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     outline: 2px solid transparent;
     outline-offset: -2px;
@@ -971,7 +971,7 @@ button {
 
 .modal-form-agreement {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     gap: 8px;
 
